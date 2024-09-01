@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', (event) => {
 let source;
 
 document.querySelectorAll('.image').forEach(item => {
@@ -19,3 +20,4 @@ function dragDrop(e) {
   e.target.style.backgroundImage = source.style.backgroundImage;
   source.style.backgroundImage = temp;
 }
+});	
