@@ -1,6 +1,3 @@
-document.addEventListener('DOMContentLoaded', (event) => {
-let source;
-
 document.querySelectorAll('.image').forEach(item => {
   item.addEventListener('dragstart', dragStart);
   item.addEventListener('dragover', dragOver);
@@ -8,7 +5,7 @@ document.querySelectorAll('.image').forEach(item => {
 });
 
 function dragStart(e) {
-  source = e.target;
+  let source = e.target;
 }
 
 function dragOver(e) {
@@ -20,4 +17,3 @@ function dragDrop(e) {
   e.target.style.backgroundImage = source.style.backgroundImage;
   source.style.backgroundImage = temp;
 }
-});	
