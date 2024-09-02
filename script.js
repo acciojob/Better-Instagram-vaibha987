@@ -1,3 +1,4 @@
+let source;
 document.querySelectorAll('.image').forEach(item => {
   item.addEventListener('dragstart', dragStart);
   item.addEventListener('dragover', dragOver);
@@ -5,7 +6,7 @@ document.querySelectorAll('.image').forEach(item => {
 });
 
 function dragStart(e) {
-  let source = e.target;
+ source = e.target;
 }
 
 function dragOver(e) {
