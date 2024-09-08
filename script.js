@@ -8,7 +8,6 @@ document.querySelectorAll('.image').forEach(item => {
 function dragStart(e) {
  source = e.target;
 }
-
 function dragOver(e) {
   e.preventDefault();
 }
